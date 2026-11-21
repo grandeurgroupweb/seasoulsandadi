@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sea Soul Sandadi
 
-## Getting Started
+Website and admin panel for **Sea Soul Sandadi**, a once-a-month Sunday gathering by the sea in Visakhapatnam: local makers, slow food, live music, families and pets.
 
-First, run the development server:
+- **Public site** (`/`): scroll-zoom hero over the venue layout, the experience by category, this month's edition, an auto-scrolling gallery, vendor enquiries via WhatsApp, Instagram reels, FAQ.
+- **Admin panel** (`/admin`): one owner login to manage photos, the edition date and venue, FAQs, page text and contact links.
+
+Built with Next.js 16, React 19, Tailwind CSS 4, Supabase (database, storage, auth), GSAP and Embla. Hosted on Vercel.
+
+## Getting started
 
 ```bash
+npm install
+cp .env.local.example .env.local   # fill in your Supabase URL and anon key
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Without Supabase keys the site still runs on the built-in content in `src/data/fallback.ts`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Full setup (Supabase project, admin account, Vercel) is in [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md). Other docs: [PRD](docs/PRD.md), [FRD](docs/FRD.md), [data model](docs/DATA-MODEL.md), [UI/UX guide](docs/UI-UX-GUIDE.md), [security](docs/SECURITY.md), [SEO](docs/SEO-STRATEGY.md), [sitemap](docs/SITEMAP.md), [testing](docs/TESTING.md).
