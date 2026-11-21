@@ -32,10 +32,11 @@ const DEFAULT_TITLE = "Sea Soul Sandadi — Sunday Flea Market by the Sea, Vizag
 const DESCRIPTION =
   "A once-a-month Sunday flea market by the sea at MGM Lawns, Beach Road, Vizag: local brands, slow food, live music, workshops, families and pets.";
 const OG_IMAGE = {
-  url: "/og.jpg",
+  // Bump ?v= whenever og.jpg changes: WhatsApp/Facebook cache previews by image URL.
+  url: "/og.jpg?v=2",
   width: 1200,
   height: 630,
-  alt: "Aerial view of Sea Soul Sandadi: rows of white stalls beside the beach in Visakhapatnam",
+  alt: "Sea Soul Sandadi logo",
 };
 
 export const metadata: Metadata = {

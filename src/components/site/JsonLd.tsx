@@ -45,7 +45,7 @@ export function JsonLd({ data }: { data: SiteData }) {
               addressCountry: "IN",
             },
           },
-          image: [`${SITE_URL}/og.jpg`],
+          image: [`${SITE_URL}/og.jpg?v=2`],
           organizer: { "@type": "Organization", name: "Sea Soul Sandadi", url: SITE_URL },
         }
       : null;
