@@ -7,7 +7,7 @@ Handoff notes so the next person or session can pick up without re-reading the c
 - **Full project brief:** `AGENT.md` (what it is, stack, design system, every section, data flow, rules, history, status). Codex: also `CODEX.md`. Claude Code: `CLAUDE.md`.
 - The public site and the admin panel are built and run locally (`npm run dev` in `site/` → http://localhost:3000, admin at `/admin/login`). Checked at 1440 / 768 / 390 px.
 - Last checks: `tsc` + `npm run lint` clean on 2026-11-20; full `npm run build` (passes, homepage JS ≈ 294 KB gzipped) and impeccable scan on 2026-11-17.
-- **Nothing is committed or pushed.** The GitHub repo `grandeurgroupweb/seasoulsandadi` (public, empty) is waiting. The owner said "not yet" — ask before committing/pushing (needs `gh auth login`).
+- **Pushed to GitHub 2026-11-21:** `grandeurgroupweb/seasoulsandadi`, branch `main`, commit `5b816da` (200 files). `dilipsai67` is a collaborator and pushes with plain `git push`. Still ask the owner before each commit/push.
 - **Supabase project does not exist yet.** The site runs on built-in fallback content (`src/data/fallback.ts` + photos in `public/seed/`). Admin login, uploads and saves are untested end to end.
 - **Theme layer is built** (Sankranti kites & candle lanterns, on locally via `fallback.ts`). How it works and how to remove/add a theme: `docs/THEME-PLAN.md`. Edition is now **January Edition** (2026-11-21; `fallback.ts`, `seed.sql`, admin hints), date still "Announcing Soon". No theme text on the site until the owner gives wording.
 - **Supabase note:** run `supabase/migrations/20261120000000_edition_theme.sql` with the init migration; without it, saving the edition form fails on the unknown `theme` column.
